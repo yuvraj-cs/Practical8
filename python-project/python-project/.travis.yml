@@ -1,0 +1,14 @@
+language: python
+python:
+  - "3.11"
+  - "3.10"
+
+install:
+  - pip install -r requirements.txt
+
+script:
+  - pytest -q
+
+branches:
+  only:
+    - main
